@@ -1,0 +1,19 @@
+safe:        false
+auto:        false
+
+source:      .
+destination: _site
+plugins:     ./_plugins
+layouts:     ./_layouts
+
+future:      true
+lsi:         false
+pygments:    false
+
+markdown: kramdown
+
+relative_permalinks: false
+
+baseurl: ''
+gems:
+  - jekyll-redirect-from

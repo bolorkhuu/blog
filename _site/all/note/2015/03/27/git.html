@@ -1,0 +1,271 @@
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"  />
+<meta property="og:title" content="software-ын төлөв хяналт "git"" />
+<meta property="og:url" content="/all/note/2015/03/27/git.html" />
+<link rel="stylesheet" type="text/css" href="/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/css/pretty_code.css" />
+<link rel="shortcut icon"  type="image/x-icon" href="/images/favicon.ico" />
+
+<title>bolorkhuu.com</title>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&appId=389226117883255&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="wrap">
+	<div id="header">
+		<p id="toplinks">
+		</p>
+		<h1> <a href="/index.html">Bolor<span class="fade">Хүү</a> </span><a href="/edu/index.html"><div id="logo"></div></a></h1>
+		<div class="slogan">
+				<a href="/blog.html" class="pink">blog</a> ~~ 
+				<a href="/hobby.html" class="green">projects</a> ~~  
+				<a href="/study.html" class="orange">lecture notes</a> ~~ 
+				<a href="/about.html" class="pink">about</a>
+		</div>
+
+</div>
+<div id="content">  
+  <p class="publish_date"> 2015.03.27</p>
+
+<h3 id="githttpenwikipediaorgwikigitsoftware---"><a href="http://en.wikipedia.org/wiki/Git_(software)">git</a>-ын талаар товчхон</h3>
+
+<p>компютерын программ хөгжүүлэхэд программын эх код-ын төлөв өдөрын тэмдэглэл мэт байнга хадгалагдаж байх нь чухал юм.</p>
+
+<p>эх код өсөх тусам хяналт хийх хэцүү болдог. яг юу өөрчилсөнөө сайн санахгүй тохиолдол зөндөө таардаг. git-ын тусламжтайгаар хөгжүүлж байгаа программыг санах ойтой болгоно. </p>
+
+<p>англи хэлээр git-ын талаар дэлгэрэнгүйг <a href="http://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide">stackoverflow</a>-с үзээрэй.</p>
+
+<p>англи хэлээр git суулгах зарчим дэлгэрэнгүйг <a href="(http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)">howto: git install</a>.</p>
+
+<pre class="terminal" name="code">
+bolor:~ bolor$ man git # git -ын талаарx товч мэдэээлэл терминалаас
+</pre>
+<p><img src="/images/man_git.png" alt="Drawing" /></p>
+
+<h3 id="git--">git суулгах зарчим</h3>
+<p>git-ыг терминалд суурилсан линукс-ын apt-get, MacOs-ын brew, port гэх мэт программын тусламжтайгаар амархан суулгана.</p>
+
+<p>1 <strong>Linux</strong></p>
+
+<pre class="terminal" name="code">
+sudo apt-get install git
+</pre>
+
+<p>2 <strong>MacOs</strong></p>
+
+<pre class="terminal" name="code">
+brew install git 
+</pre>
+
+<h3 id="git---">git–ын хэрэглээ</h3>
+
+<p>git ашиглах тест прожект үүзгэе.</p>
+
+<pre class="terminal" name="code">
+bolor:Desktop bolor$ mkdir myTestProject
+bolor:Desktop bolor$ cd myTestProject/
+</pre>
+
+<p>хоосон прожектэд ямар нэгэн файл нэмье.</p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ sudo nano helloworld.c # энэ бол тест файл юм.
+</pre>
+
+<p><img src="/images/helloworld.png" alt="Drawing" /></p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ gcc -o helloworld helloworld.c 
+bolor:myTestProject bolor$ ./helloworld 
+ene bol test yum 
+</pre>
+
+<p>үүсгэсэн прожект доторх <strong>бүх</strong> мэдээлэл</p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ ls -Gla
+total 32
+drwxr-xr-x   5 bolor  staff   170   .
+drwx------+  6 bolor  staff   204   ..
+-rwxr-xr-x   1 bolor  staff  8636   helloworld
+-rw-r--r--   1 root   staff   222   helloworld.c
+</pre>
+
+<p>git-ыг таниулах</p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ git init 
+Initialized empty Git repository in /Users/bolor/Desktop/myTestProject/.git/
+</pre>
+
+<p>git-ыг таниулсан прожект доторх <strong>бүх</strong> мэдээлэл. сайн ажиглаж харвал нуугдасан <strong>.git</strong> (хавтас) өрөө үүссэн байна.</p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ ls -Gla
+total 32
+drwxr-xr-x  5 bolor  staff   170 .
+drwx------+ 6 bolor  staff   204 ..
+drwxr-xr-x  9 bolor  staff   306 .git
+-rwxr-xr-x  1 bolor  staff  8636 helloworld
+-rw-r--r--  1 root   staff   247 helloworld.c
+</pre>
+
+<p>одоо эхний тэмдэглэл хадгалах боломжтой боллоо. </p>
+
+<p><strong>git add . &amp;&amp; git commit -m ‘commit message’</strong> </p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ git add .
+bolor:myTestProject bolor$ git commit -m 'эхний хадгалалт my first commit'
+[master (root-commit) 9d3d7a5] эхний хадгалалт my first commit
+ 2 files changed, 14 insertions(+)
+ create mode 100755 helloworld
+ create mode 100644 helloworld.c
+</pre>
+
+<p>программын эх кодын төлөвыг <strong>git status</strong> шалгана</p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ git status
+On branch master
+nothing to commit, working directory clean
+</pre>
+
+<p>үүсгэсэн санамжыг <strong>git log</strong> комманд-р харна</p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ git log
+commit 9d3d7a5396886bb96f752024636feeda4e47b1bd
+Author: Bolor 
+Date:   xx:xx:xxxx 
+
+    эхний хадгалалт my first commit
+</pre>
+
+<p>үүсгэсэн прожектын явцыг бэлэн гэж үзвэл repositorie хэлбэрээр хадгалж болно. </p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ mkdir -p ../share/myrepo1.git
+bolor:myTestProject bolor$ git init --bare ../share/myrepo1.git/
+Initialized empty Git repository in /Users/bolor/Desktop/share/myrepo1.git/
+bolor:myTestProject bolor$ git remote add myRepo_Beta ../share/myrepo1.git/
+bolor:myTestProject bolor$ git push myRepo_Beta master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.37 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To ../share/myrepo1.git/
+ * [new branch]      master -&gt; master
+</pre>
+
+<p>эх код оо <strong>ssh</strong> сервэрээр <strong>raspberry pi</strong>-д тавьж туршив.</p>
+
+<pre class="terminal" name="code">
+bolor:~ bolor$ ssh pi@192.168.1.3
+
+pi@raspberrypi ~ $ mkdir -p share/pro1.git
+pi@raspberrypi ~ $ git init --bare share/pro1.git/
+Initialized empty Git repository in /home/pi/share/pro1.git/
+</pre>
+
+<pre class="terminal" name="code">
+myTestProject bolor$ git remote add share_pi pi@192.168.1.3:/home/pi/share/pro1.git/
+myTestProject bolor$ git push share_pi master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.37 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To pi@192.168.1.3:/home/pi/share/pro1.git/
+ * [new branch]      master -&gt; master
+</pre>
+
+<p>raspberry pi-д тавьсан кодоо <strong>git clone pi@192.168.1.3:/home/pi/share/pro1.git/</strong> комманд-р татна</p>
+
+<pre class="terminal" name="code">
+bolor:Desktop bolor$ git clone pi@192.168.1.3:/home/pi/share/pro1.git/
+Cloning into 'pro1'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+Receiving objects: 100% (4/4), 1.37 KiB | 0 bytes/s, done.
+remote: Total 4 (delta 0), reused 0 (delta 0)
+Checking connectivity... done.
+</pre>
+
+<p>өмнө үүсгэсэн repository-ыг <strong>git clone ~/Desktop/share/myrepo1.git/</strong> комманд-р татна</p>
+
+<pre class="terminal" name="code">
+bolor:Desktop bolor$ git clone ~/Desktop/share/myrepo1.git/
+Cloning into 'myrepo1'...
+done.
+</pre>
+
+<p>бичсэн кодонд жижиг өөрчилөлт оруулья</p>
+
+<p><img src="/images/helloworld1.png" alt="Drawing" /></p>
+
+<p>өөрчилсөн кодоо одоо коммит хийж хадгалья</p>
+
+<p><strong>git add . &amp;&amp; git commit -m ‘second commit’</strong></p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ git add . &amp;&amp; git commit -m 'second commit'
+[master c46e35f] second commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+</pre>
+
+<p>хадгалсан эх кодны тэмдэглэлийг <strong>git log</strong>-p харна</p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ git log
+commit c46e35f6095a64eceaaed89e4621dabea33cc600
+Author: Bolor 
+Date:  
+
+    second commit
+
+commit 9d3d7a5396886bb96f752024636feeda4e47b1bd
+Author: 
+Date:  
+
+    эхний хадгалалт my first commit
+</pre>
+
+<p>юу өөрчилснөө <strong>git difftool commit2 commit1</strong> шалгаж болно </p>
+
+<pre class="terminal" name="code">
+bolor:myTestProject bolor$ git difftool c46e35f6095a64eceaaed89e4621dabea33cc600
+9d3d7a5396886bb96f752024636feeda4e47b1bd
+
+Viewing (1/1): 'helloworld.c'
+Launch 'opendiff' [Y/n]: yw
+</pre>
+
+<p><img src="/images/diffs.png" alt="Drawing" /></p>
+
+<p>энэ удаа git-д ашиглагдах чухал хэдэн коммандыг туршиж харууллаа. </p>
+
+
+</div> 
+<div id="footer">
+    <a href="https://www.facebook.com/bolorkhuu" class="green">facebook</a> ||
+    <a href="https://github.com/bolorkhuu"  class="green">github</a>
+</div>
+</div>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
+

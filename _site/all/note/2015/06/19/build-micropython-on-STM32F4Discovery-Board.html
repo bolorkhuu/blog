@@ -1,0 +1,214 @@
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"  />
+<meta property="og:title" content="build micropython on STM32F4 Discovery Board" />
+<meta property="og:url" content="/all/note/2015/06/19/build-micropython-on-STM32F4Discovery-Board.html" />
+<link rel="stylesheet" type="text/css" href="/css/default.css" />
+<link rel="stylesheet" type="text/css" href="/css/pretty_code.css" />
+<link rel="shortcut icon"  type="image/x-icon" href="/images/favicon.ico" />
+
+<title>bolorkhuu.com</title>
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&appId=389226117883255&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<div id="wrap">
+	<div id="header">
+		<p id="toplinks">
+		</p>
+		<h1> <a href="/index.html">Bolor<span class="fade">Хүү</a> </span><a href="/edu/index.html"><div id="logo"></div></a></h1>
+		<div class="slogan">
+				<a href="/blog.html" class="pink">blog</a> ~~ 
+				<a href="/hobby.html" class="green">projects</a> ~~  
+				<a href="/study.html" class="orange">lecture notes</a> ~~ 
+				<a href="/about.html" class="pink">about</a>
+		</div>
+
+</div>
+<div id="content">  
+  <p class="publish_date"> 2015.06.19</p>
+
+<p><img src="/images/stm32f4.jpg" alt="Drawing" style="width: 400px;" /></p>
+
+<p><a href="http://micropython.org/">micropython</a>-ыг <a href="https://www.kickstarter.com/projects/214379695/micro-python-python-for-microcontrollers?lang=de">kickstarter</a>-д гарснаас хойш хөгжүүлэлтийг нь 6 сар тасралтгүй ажиглаж байна. өөрт байсан STM32F4 Discovery Board-д micropython-г туршсан байдлаа доор харуулья. <strong>MacOs</strong> үйлдлын системыг ашиглав. линукстэй төстэй учир бараг бүх явц адилхан.</p>
+
+<p>mikropython-ыг хөрвүүлхэд <a href="https://launchpad.net/gcc-arm-embedded/+download">arm-none-eabi-gcc</a> compiler хэрэгтэй болно. үүнийг <a href="https://launchpad.net/gcc-arm-embedded/+download">эндээс</a> татаж авья.</p>
+
+<p>хаана хадгалснаас хамаар ч дараах байдлаар <strong>.bashrc</strong>-д юм уу <strong>.bash_profile</strong>-д байрлуулья.</p>
+
+<pre class="terminal" name="code">
+export PATH=/Volumes/work/gcc_arm_versions/gcc-arm-none-eabi/bin:$PATH
+</pre>
+
+<p>дараа нь <strong>source .bash_profile</strong> эсвэл <strong>source .bashrc</strong> комманд-р терминалаас arm-gcc-compiler-ыг дуудах боломжой болно.</p>
+
+<p>micropython-ыг эх кодыг дараах байдлаар <strong>Downloads</strong> хавтасд татья.</p>
+
+<pre class="terminal" name="code">
+cd ~/Downloads/
+git clone https://github.com/micropython/micropython.git
+</pre>
+
+<p>татаж авсан хойноо <strong>micropython/stmhal</strong> хавтасруу орно. </p>
+
+<p><strong>make</strong> <strong>BOARD=STM32F4DISC</strong> коммандаар микроконтролерт байрлуулах үйлдлын системыг хөрвүүлье.</p>
+
+<pre class="terminal" name="code">
+cd ~/Downloads/micropython/stmhal
+make BOARD=STM32F4DISC
+</pre>
+
+<p>ойролцоогоор 1 минут орчим хөрвүүлж уншисан хойно дараах файлууд үүснэ. </p>
+
+<pre class="terminal" name="code">
+LINK build-STM32F4DISC/firmware.elf
+   text	   data	    bss	    dec	    hex	filename
+ 265640	     96	  27664	 293400	  47a18	build-STM32F4DISC/firmware.elf
+Create build-STM32F4DISC/firmware.dfu
+Create build-STM32F4DISC/firmware.hex 
+</pre>
+
+<p>үүсгэсэн үйлдлын системийг виртуал com port холболтоор микроконтроллерт татаж байршуулaxын тулд STM32F4 Board -ын bootloader-ыг <strong>BOOT0</strong> pin-г <strong>VDD</strong> холбон  <strong>RESET</strong> товчыг дарснаар идэвхжүүлнэ. дараах зураг дээрээс тодорхой харагдана.</p>
+
+<p><img src="/images/boot0.jpg" alt="Drawing" style="width: 300px;" /></p>
+
+<p>microusb кабелаар виртуал com port холболт үүснэ. дан ганцаараа хавтанг цахилгаанаар хангаж чадахгүй учир miniusb кабелыг компютерт залгах болсон.</p>
+
+<p>өмнө үүсгэсэн үйлдлын системыг микроконтроллерт байрлуулхад <strong>dfu-util</strong> программ хэрэг болно. </p>
+
+<pre class="terminal" name="code">
+brew install dfu-util minicom
+</pre>
+
+<p>линукс ашиглаж байгаа хүмүүс дараах байдлаар суулгана.</p>
+
+<pre class="terminal" name="code">
+sudo apt-get install dfu-util
+</pre>
+
+<p>ликукстэй хүмүүс <strong>sudo</strong> <strong>vi</strong> <strong>/etc/udev/rules.d/49-stmdiscovery.rules</strong> файл үүсгэн энэ өгөгдлийг хадаглана.</p>
+
+<pre class="terminal" name="code">
+sudo vi /etc/udev/rules.d/49-stmdiscovery.rules
+</pre>
+
+<pre class="terminal" name="code">
+# f055:9800 - STM32F4 Discovery running MicroPython in USB Serial Mode (CN5)
+ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", ENV{ID_MM_DEVICE_IGNORE}="1"
+ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", ENV{MTP_NO_PROBE}="1"
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", MODE:="0666"
+KERNEL=="ttyACM*", ATTRS{idVendor}=="f055", ATTRS{idProduct}=="9800", MODE:="0666"
+# 0483:df11 - STM32F4 Discovery in DFU mode (CN5)
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE:="0666"
+</pre>
+
+<p>ликукстэй хүмүүс sudo udevadm control –reload-rules коммандаар өмнө үүсгэсэн файлыг ликукс системд дараах байдлаар уншуулна.</p>
+
+<pre class="terminal" name="code">
+sudo udevadm control --reload-rules
+</pre>
+
+<p>үүсгэсэн үйлдлын ситемыг дараах байдлаар микроконтроллерт татья.</p>
+
+<pre class="terminal" name="code">
+sudo make BOARD=STM32F4DISC deploy
+Password:
+Use make V=1 or set BUILD_VERBOSE in your environment to increase build verbosity.
+Writing build-STM32F4DISC/firmware.dfu to the board
+dfu-util 0.8
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2014 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to dfu-util@lists.gnumonks.org
+
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuERROR, status = 10
+dfuERROR, clearing status
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+file contains 1 DFU images
+parsing DFU image 1
+image for alternate setting 0, (2 elements, total size = 265752)
+parsing element 1, address = 0x08000000, size = 10380
+Download	[=========================] 100%        10380 bytes
+Download done.
+parsing element 2, address = 0x08020000, size = 255356
+Download	[=========================] 100%       255356 bytes
+Download done.
+done parsing DfuSe file 
+</pre>
+
+<pre class="terminal" name="code">
+dfu-util -a 0 -d 0483:df11 -D build-STM32F4DISC/firmware.dfu
+dfu-util 0.8
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2014 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to dfu-util@lists.gnumonks.org
+
+Opening DFU capable USB device...
+ID 0483:df11
+Run-time device DFU version 011a
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 011a
+Device returned transfer size 2048
+DfuSe interface name: "Internal Flash  "
+file contains 1 DFU images
+parsing DFU image 1
+image for alternate setting 0, (2 elements, total size = 265752)
+parsing element 1, address = 0x08000000, size = 10380
+Download	[=========================] 100%        10380 bytes
+Download done.
+parsing element 2, address = 0x08020000, size = 255356
+Download	[=========================] 100%       255356 bytes
+Download done.
+done parsing DfuSe file
+</pre>
+
+<p>одоо туршиж үзхэд бэлэн боллоо. </p>
+
+<pre class="terminal" name="code">
+minicom -D /dev/tty.usbmodem*
+</pre>
+
+<p>эсвэл</p>
+
+<pre class="terminal" name="code">
+screen /dev/tty.usbmodem*
+</pre>
+
+
+
+</div> 
+<div id="footer">
+    <a href="https://www.facebook.com/bolorkhuu" class="green">facebook</a> ||
+    <a href="https://github.com/bolorkhuu"  class="green">github</a>
+</div>
+</div>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</body>
+</html>
+

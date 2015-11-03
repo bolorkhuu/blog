@@ -1,0 +1,27 @@
+---
+published: true
+layout: default
+title: Balancing Robot
+---
+<div id="home">
+  <ul class="posts">
+    {% for post in site.categories.projects %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+<p class="publish_date"> 2014.11.12</p>
+
+A balancing robot is a common interesting example in field of control system. 
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/mWpJACZlQ-g" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/su7aVd2Gg6g" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/1_jfFPuLmt8" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="//www.youtube.com/embed/GymrKu53D6w" frameborder="0" allowfullscreen></iframe>
+state control simulation
+<p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel4g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
+</p>
+<p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel5g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
+</p>
+<p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel7g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
+</p>
