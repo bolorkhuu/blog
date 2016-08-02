@@ -95,7 +95,7 @@ sudo udevadm control --reload-rules
 үүсгэсэн үйлдлын ситемыг дараах байдлаар микроконтроллерт татья.
 
 <pre class="terminal" name="code">
-sudo make BOARD=STM32F4DISC deploy
+sudo make BOARD=STM32F4DISC deploy # make USE_PYDFU=0 BOARD=STM32F4DISC deploy
 Password:
 Use make V=1 or set BUILD_VERBOSE in your environment to increase build verbosity.
 Writing build-STM32F4DISC/firmware.dfu to the board
