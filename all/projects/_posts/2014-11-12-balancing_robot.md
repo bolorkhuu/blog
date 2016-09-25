@@ -10,9 +10,9 @@ title: Balancing Robot
     {% endfor %}
   </ul>
 </div>
-<p class="publish_date"> 2014.11.12</p>
+<p class="publish_date"> 12.11.2014</p>
 
-A balancing robot is a common interesting example in field of control system. Marbot is a simple half autonomous robot with 2, 12V DC maxon geared motors and a IMU that can go forward, backward and turn while balancing. 
+A balancing robot is a interesting example in field of control system. Marbot is a simple half autonomous robot with 2, 12V DC maxon geared motors and a IMU (Accelerometer + Gyroscope) that can go forward, backward and turn while balancing. 
 
 Some movies of Marbot in motion:
 
@@ -28,3 +28,8 @@ State control simulation:
 </p>
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel7g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
+
+
+
+<p> <img src="{{ site.url }}{{ site.baseurl }}/images/marbot/o1.gif" style="width:480px;height:325px;border:solid 9px #e3e3e3;" />
+<p> <img src="{{ site.url }}{{ site.baseurl }}/images/marbot/o2.gif" style="width:480px;height:325px;border:solid 9px #e3e3e3;" />
