@@ -16,20 +16,23 @@ A balancing robot is a interesting example in field of control system. Marbot is
 
 Some movies of Marbot in motion:
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/eFX8kx1wI18" frameborder="0" allowfullscreen></iframe>
-<iframe width="640" height="480" src="https://www.youtube.com/embed/su7aVd2Gg6g" frameborder="0" allowfullscreen></iframe>
+<iframe width="600" height="400" src="https://www.youtube.com/embed/AHVHEc2nqg0" frameborder="0" allowfullscreen></iframe>
 
+
+<p></p><p></p>
+<p></p><p></p>
 
 State control simulation:
 
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel4g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
-<p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel5g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
-</p>
+<!-- <p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel5g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
+</p> -->
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel7g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
 
-
+<!-- 
 
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/marbot/o1.gif" style="width:480px;height:325px;border:solid 9px #e3e3e3;" />
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/marbot/o2.gif" style="width:480px;height:325px;border:solid 9px #e3e3e3;" />
+ -->
