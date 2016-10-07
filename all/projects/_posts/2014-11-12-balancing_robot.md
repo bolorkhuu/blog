@@ -17,6 +17,11 @@ A balancing robot is a interesting example in field of control system. Marmot-Ro
 
 Some movies of Marbot in motion:
 
+<iframe width="600" height="400" src="https://www.youtube.com/embed/jPH4uLOQLpM" frameborder="0" allowfullscreen></iframe>
+
+<p></p><p></p>
+<p></p><p></p>
+
 <iframe width="600" height="400" src="https://www.youtube.com/embed/AHVHEc2nqg0" frameborder="0" allowfullscreen></iframe>
 
 
