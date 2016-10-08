@@ -10,7 +10,7 @@ title: Balancing Robot
     {% endfor %}
   </ul>
 </div>
-<p class="publish_date"> 12.11.2014</p>
+<p class="publish_date"> updated: 01.10.2016</p>
 
 A balancing robot is a interesting example in field of control system. Marmot-Robot briefly "MarBot" is a half autonomous robot with 2, 12V DC maxon geared motors with a quadrature encoder and a IMU (Accelerometer + Gyroscope) that can go forward, backward and turn while balancing. It uses 2 multidimensional Kalman-Filter to predict tilt angle of the robot and also the pose (acceleration, velocity, position) of the 2 wheels. I spent the last 3 years working on this project while studying.
 
