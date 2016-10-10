@@ -4,8 +4,11 @@ title: bolorkhuu.com
 ---
 
 <div id="home">
-  <h2 class="orange">Meine Mitschriften an der TU-Dresden</h2>
-  <p> Die Latex Quelldaten werden alle auf <a href="https://github.com/bolorkhuu?tab=repositories">github</a> gehostet</p>
+  <h3 class="orange">my lecture notes at TU-Dresden</h3>
+  <p> Es sind leider nur regelungstechnische Mitschriften. Die Latex Quelldaten werden alle auf <a href="https://github.com/bolorkhuu?tab=repositories">github</a> gehostet.</p> 
+
+  Ich übernehme keine Haftung für die Richtigkeit und Vollständigkeit.<p> </p>
+  
   <ul class="posts">
     {% for post in site.categories.study %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>

@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default
-title: build micropython on STM32F4 Discovery Board
+title: building micropython on STM32F4 Discovery Board
 ---
 <p class="publish_date"> 2015.06.19</p>
 
