@@ -20,7 +20,7 @@ A balancing robot is a interesting example in field of control system. Marmot-Ro
 
 <p></p><p></p>
 
-**Some movies of Marbot in motion:**
+**Marbot in motion:**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jPH4uLOQLpM" frameborder="0" allowfullscreen></iframe>
 
@@ -37,6 +37,11 @@ A balancing robot is a interesting example in field of control system. Marmot-Ro
   * 2 x Reely Balloon Tyre
   * 3 x Acrylic Glass
   * 2 x Maxon Geared Motor with a 2 Channel Quadrature Encoder 9W
+
+
+**Controller Board v0, which is currently being in use on MarBot**
+
+<img src="{{ site.baseurl }}/images/marbot/marboardv0.png" alt="Drawing" style="width: 400px;"/>
 
 
 **State control simulation:**
