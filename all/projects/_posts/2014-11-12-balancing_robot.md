@@ -39,9 +39,9 @@ A balancing robot is a interesting example in field of control system. Marmot-Ro
   * 2 x Maxon Geared Motor with a 2 Channel Quadrature Encoder 9W
 
 
-**Controller Board v0, which is currently being in use on MarBot**
+**Controller Board v0**, which is currently being in use on the robot:
 
-<img src="{{ site.baseurl }}/images/marbot/marboardv0.png" alt="Drawing" style="width: 400px;"/>
+<img src="{{ site.baseurl }}/images/marbot/marboardv0.png" alt="Drawing" style="width: 560px;"/>
 
 
 **State control simulation:**
