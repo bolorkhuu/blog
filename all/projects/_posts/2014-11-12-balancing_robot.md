@@ -16,17 +16,19 @@ During my studies at TU-Dresden i've been working on these projects below and al
 </div>
 <p class="publish_date"> updated: 01.10.2016</p>
 
-A balancing robot is a interesting example in field of control system. Marmot-Robot briefly **MarBot** is a half autonomous robot with 2, 12V DC maxon geared motors with a quadrature encoder and a IMU (Accelerometer + Gyroscope) that can go forward, backward and turn while balancing. It uses 2 multidimensional Kalman-Filter to predict tilt angle of the robot and also the pose (acceleration, velocity, position) of the 2 wheels. I spent the last 3 years working on this project while studying.
+A balancing robot is a interesting example in field of control system. Marmot-Robot briefly **MarBot** is a half autonomous robot with 2, 12V DC maxon geared motors with a quadrature encoder and a IMU (Accelerometer + Gyroscope) that can go forward, backward and turn while balancing. It uses 2 multidimensional Kalman-Filter to predict tilt angle of the robot and also the pose (acceleration, velocity, position) of the 2 wheels. I spent the last 3 years working on this project while studying. 
+
+As yet i've built 6 MarBots. The TU-Dresden as well as the UMIT Hall in Tirol Austria own 2 exemplar of the MarBot as a test station for education purpose.
 
 <p></p><p></p>
 
-**Marbot in motion:**
+### MarBot in motion:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jPH4uLOQLpM" frameborder="0" allowfullscreen></iframe>
 
 <p></p><p></p>
 
-**Parts list**:
+### Parts list:
 
   * 1 x STM32F407 Microcontroller
   * 2 x XBee S2B ZigBee Pro 10mW
@@ -36,15 +38,17 @@ A balancing robot is a interesting example in field of control system. Marmot-Ro
   * 1 x 12V, 3800mAh NiMh Battery-Pack
   * 2 x Reely Balloon Tyre
   * 3 x Acrylic Glass
-  * 2 x Maxon Geared Motor with a 2 Channel Quadrature Encoder 9W
+  * 2 x Maxon Geared Motor with a 2 Channel Quadrature Encoder 9W.
 
 
 The Controller Motherboard **Marboard v0** below is currently being in use on the robot, which is created with KiCad:
 
-<img src="{{ site.baseurl }}/images/marbot/marboardv0.png" alt="Drawing" style="width: 560px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/marboardv0.png" alt="Drawing" style="width: 560px;"/>
 
 
-**State control simulation:**
+### State control simulation:
+
+I used **python** for the kinematic simulation with **numpy**, **sympy** and also **matplotlib**.
 
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel4g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
@@ -52,10 +56,20 @@ The Controller Motherboard **Marboard v0** below is currently being in use on th
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel7g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
 
-**Some technical drawing of the MarBot Board:**
+### Some pictures of the MarBot:
 
-<img src="{{ site.baseurl }}/images/marbot/drawing/MittlerePlatte.png" alt="Drawing" style="width: 800px;"/>
-<img src="{{ site.baseurl }}/images/marbot/drawing/OberstePlatte.png" alt="Drawing" style="width: 800px;"/>
-<img src="{{ site.baseurl }}/images/marbot/drawing/UnterePlatte.png" alt="Drawing" style="width: 800px;"/>
-<img src="{{ site.baseurl }}/images/marbot/drawing/Motorhalterung.png" alt="Drawing" style="width: 800px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/MarBots_table.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/MarBots_table1.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/MarBots_table2.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/MarBots_table3.jpeg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/awesomo.jpg" alt="Drawing" style="width: 500px;"/>
+
+
+### Some technical drawing of the MarBot:
+
+<img src="{{ site.baseurl }}/images/MarBot/drawing/MittlerePlatte.png" alt="Drawing" style="width: 600px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/drawing/OberstePlatte.png" alt="Drawing" style="width: 600px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/drawing/UnterePlatte.png" alt="Drawing" style="width: 600px;"/>
+<img src="{{ site.baseurl }}/images/MarBot/drawing/Motorhalterung.png" alt="Drawing" style="width: 600px;"/>
+
 
