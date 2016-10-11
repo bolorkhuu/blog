@@ -43,8 +43,7 @@ As yet i've built 6 MarBots. The TU-Dresden as well as the UMIT Hall in Tirol Au
 
 The Controller Motherboard **Marboard v0** below is currently being in use on the robot, which is created with KiCad:
 
-<img src="{{ site.baseurl }}/images/MarBot/marboardv0.png" alt="Drawing" style="width: 560px;"/>
-<img src="{{ site.baseurl }}/images/stm32f4.jpg" alt="Drawing" style="width: 400px;"/>
+<img src="{{ site.baseurl }}/images/marbot/marboardv0.png" alt="Drawing" style="width: 560px;"/>
 
 
 ### State control simulation:
@@ -59,18 +58,18 @@ I used **python** for the kinematic simulation with **numpy**, **sympy** and als
 
 ### Some pictures of the MarBot:
 
-<img src="{{ site.baseurl }}/images/MarBot/MarBots_table.jpg" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/MarBot/MarBots_table1.jpg" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/MarBot/MarBots_table2.jpg" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/MarBot/MarBots_table3.jpeg" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/MarBot/awesomo.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/marbot/MarBots_table.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/marbot/MarBots_table1.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/marbot/MarBots_table2.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/marbot/MarBots_table3.jpeg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/marbot/awesomo.jpg" alt="Drawing" style="width: 500px;"/>
 
 
 ### Some technical drawing of the MarBot:
 
-<img src="{{ site.baseurl }}/images/MarBot/drawing/MittlerePlatte.png" alt="Drawing" style="width: 600px;"/>
-<img src="{{ site.baseurl }}/images/MarBot/drawing/OberstePlatte.png" alt="Drawing" style="width: 600px;"/>
-<img src="{{ site.baseurl }}/images/MarBot/drawing/UnterePlatte.png" alt="Drawing" style="width: 600px;"/>
-<img src="{{ site.baseurl }}/images/MarBot/drawing/Motorhalterung.png" alt="Drawing" style="width: 600px;"/>
+<img src="{{ site.baseurl }}/images/marbot/drawing/MittlerePlatte.png" alt="Drawing" style="width: 600px;"/>
+<img src="{{ site.baseurl }}/images/marbot/drawing/OberstePlatte.png" alt="Drawing" style="width: 600px;"/>
+<img src="{{ site.baseurl }}/images/marbot/drawing/UnterePlatte.png" alt="Drawing" style="width: 600px;"/>
+<img src="{{ site.baseurl }}/images/marbot/drawing/Motorhalterung.png" alt="Drawing" style="width: 600px;"/>
 
 
