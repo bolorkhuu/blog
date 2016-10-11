@@ -59,8 +59,8 @@ I used **python** for the kinematic simulation with **numpy**, **sympy** and als
 ### Some pictures of the MarBot:
 
 <img src="{{ site.baseurl }}/images/marbot/marbots_table.jpg" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/marbot/marbots_table1.jpg" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/marbot/marbots_table2.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/marbot/marbots_table1.JPG" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/marbot/marbots_table2.JPG" alt="Drawing" style="width: 500px;"/>
 <img src="{{ site.baseurl }}/images/marbot/marbots_table3.jpeg" alt="Drawing" style="width: 500px;"/>
 <img src="{{ site.baseurl }}/images/marbot/awesomo.jpg" alt="Drawing" style="width: 500px;"/>
 
