@@ -24,7 +24,7 @@ As yet i've built 6 MarBots. The TU-Dresden as well as the UMIT Hall in Tirol Au
 
 ### MarBot in motion:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jPH4uLOQLpM" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="400" src="https://www.youtube.com/embed/jPH4uLOQLpM" frameborder="0" allowfullscreen></iframe>
 
 <p></p><p></p>
 
