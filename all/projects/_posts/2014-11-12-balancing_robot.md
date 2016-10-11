@@ -42,6 +42,8 @@ As yet i've built 6 MarBots. The TU-Dresden as well as the UMIT Hall in Tirol Au
 
 
 The Controller Motherboard **Marboard v0** below is currently being in use on the robot, which is created with KiCad:
+
+
 <img src="{{ site.baseurl }}/images/marbot/marboardv01.png" alt="Drawing" style="width: 560px;"/>
 <img src="{{ site.baseurl }}/images/marbot/project.png" alt="Drawing" style="width: 580px;"/>
 <img src="{{ site.baseurl }}/images/marbot/marboardv0.png" alt="Drawing" style="width: 560px;"/>
@@ -51,19 +53,19 @@ The Controller Motherboard **Marboard v0** below is currently being in use on th
 
 I used **python** for the kinematic simulation with **numpy**, **sympy** and also **matplotlib**.
 
-<p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel4g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
+<p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel4g.gif" style="width:550px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
 
-<p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel7g.gif" style="width:480px;height:360px;border:solid 9px #e3e3e3;" />
+<p> <img src="{{ site.url }}{{ site.baseurl }}/images/pendel7g.gif" style="width:550px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
 
 ### Some pictures of the MarBot:
 
-<img src="{{ site.baseurl }}/images/marbot/marbots_table.jpg" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/marbot/marbots_table1.JPG" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/marbot/marbots_table2.JPG" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/marbot/marbots_table3.jpeg" alt="Drawing" style="width: 500px;"/>
-<img src="{{ site.baseurl }}/images/marbot/awesomo.jpg" alt="Drawing" style="width: 500px;"/>
+<img src="{{ site.baseurl }}/images/marbot/marbots_table.jpg" alt="Drawing" style="width: 550px;"/>
+<img src="{{ site.baseurl }}/images/marbot/marbots_table1.JPG" alt="Drawing" style="width: 550px;"/>
+<img src="{{ site.baseurl }}/images/marbot/marbots_table2.JPG" alt="Drawing" style="width: 550px;"/>
+<img src="{{ site.baseurl }}/images/marbot/marbots_table3.jpeg" alt="Drawing" style="width: 550px;"/>
+<img src="{{ site.baseurl }}/images/marbot/awesomo.jpg" alt="Drawing" style="width: 550px;"/>
 
 
 ### Some technical drawing of the MarBot:
