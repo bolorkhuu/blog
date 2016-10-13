@@ -1,7 +1,7 @@
 ---
 published: true
 layout: default
-title: Максвеллын тэгшитгэл
+title: Максвеллын тэгшитгэлүүд
 ---
 <p class="publish_date"> 2014.06.07</p>
 

@@ -13,4 +13,6 @@ During my studies at TU-Dresden i've been working on these projects below and al
     {% endfor %}
   </ul>
 </div>
+
 <p class="publish_date"> updated: 12.09.2016</p>
+
