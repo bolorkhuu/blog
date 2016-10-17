@@ -70,6 +70,9 @@ I used **python** for the kinematic simulation with **numpy**, **sympy** and als
 <img src="{{ site.baseurl }}/images/marbot/marbots_table1.JPG" alt="Drawing" style="width: 550px;"/>
 <img src="{{ site.baseurl }}/images/marbot/marbots_table2.JPG" alt="Drawing" style="width: 550px;"/>
 <img src="{{ site.baseurl }}/images/marbot/marbots_table3.jpeg" alt="Drawing" style="width: 550px;"/>
+
+I'm a great fan of South Park. Therefore i've put a little suit on MarBot.
+
 <img src="{{ site.baseurl }}/images/marbot/awesomo.jpg" alt="Drawing" style="width: 550px;"/>
 
 

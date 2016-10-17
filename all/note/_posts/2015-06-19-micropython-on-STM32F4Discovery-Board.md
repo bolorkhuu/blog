@@ -49,6 +49,16 @@ Create build-STM32F4DISC/firmware.dfu
 Create build-STM32F4DISC/firmware.hex 
 </pre>
 
+үүссэн firmware-г микроконтроллерт тавиx д 2 боломж байгаа, нэг н шууд .elf пайлийг .bin руу хөрвүүлээд st-flash ашиглан флашдна.
+
+<pre class="terminal" name="code">
+arm-none-eabi-objcopy -O binary firmware.elf prog.bin
+</pre>
+
+<pre class="terminal" name="code">
+st-flash write prog.bin 0x8000000
+</pre>
+
 
 үүсгэсэн үйлдлын системийг виртуал com port холболтоор микроконтроллерт татаж байршуулaxын тулд STM32F4 Board -ын bootloader-ыг **BOOT0** pin-г **VDD** холбон  **RESET** товчыг дарснаар идэвхжүүлнэ. дараах зураг дээрээс тодорхой харагдана.
 
