@@ -15,7 +15,7 @@ During my studies at TU-Dresden i've been working on these projects below and al
 </div>
 <p class="publish_date"> updated: 22.08.2016</p>
 
-This is a robot controller board **MarBoard v1**, a further development of the currently using board **MarBoard v0** on my self balancing robot called **MarBot**. I have made many updates to this custom robot recently. It does work very well. Unfortunately the micro usb socket has brocken newly, i cut the micro usb cabel and soldered it to the pins as you can see it in the pictures below.
+This is a robot controller board **MarBoard v1**, a further development of the currently using board **MarBoard v0** on my self balancing robot called **MarBot**. I have made many updates to this custom board recently. It does work very well. Unfortunately the micro usb socket has brocken newly, i cut the micro usb cabel and soldered it to the pins as you can see it in the pictures below.
 
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/marbot/marboardv1.gif" style="width:550px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
