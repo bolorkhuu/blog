@@ -53,6 +53,10 @@ The Controller Motherboard **Marboard v0** below is currently being in use on th
 <img src="{{ site.baseurl }}/images/marbot/project.png" alt="Drawing" style="width: 580px;"/>
 <img src="{{ site.baseurl }}/images/marbot/marboardv0.png" alt="Drawing" style="width: 560px;"/>
 
+The **MarBoard v0** has been further developed and will be replaced soon with **MarBoard v1**.
+
+<img src="{{ site.baseurl }}/images/marbot/marboardv1_ov.jpg" alt="Drawing" style="width: 560px;"/>
+
 
 ### State control simulation:
 
