@@ -16,7 +16,7 @@ During my studies at TU-Dresden i've been working on these projects below and al
 
 <p class="publish_date"> updated: 12.09.2016</p>
 
-This is a android app for bluetooth remote controlling for my self balancing robot **MarBot** written in java using android studio. I have made it with my friend Dima, who is a java guru.
+This is a android app for bluetooth remote controlling for my self balancing robot **MarBot** written in java using android studio. I have made it with my friend Dmitry, who i consider a java guru.
 
 <img src="{{ site.baseurl }}/images/marbot/app/img1.jpg" alt="Drawing" style="width: 500px;"/>
 
