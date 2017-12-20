@@ -3,7 +3,6 @@ auto:        false
 
 source:      .
 destination: _site
-plugins:     ./_plugins
 layouts:     ./_layouts
 
 future:      true
