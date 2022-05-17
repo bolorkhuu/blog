@@ -1,12 +1,12 @@
 ---
 published: true
 layout: default
-title: Максвеллын тэгшитгэлүүд
+title: Максвелын тэгшитгэлүүд
 ---
 <p class="publish_date"> 2014.06.07</p>
 
 
-### Максвеллын тэгшитгэлүүд
+### Максвелын тэгшитгэлүүд
 
 Цахилгаан техникын онол байгаль дээр орших цахилгаан болон соронзон орны бүх үзэгдлийг суурь онолын болон хэрэглээний түшинд судалдаг. үүнд зѳвхѳн [Максвелл](http://en.wikipedia.org/wiki/Maxwell%27s_equations)ын 4 тэгшитгэлийн шийдийг олоход хангалттай. 
 
@@ -17,7 +17,7 @@ title: Максвеллын тэгшитгэлүүд
 \vec{J} &= \kappa \vec{E}
 \end{align}
 
-**Максвеллын тэгшитгэлүүд дифренциал хэлбэрт**:
+**Максвелын тэгшитгэлүүд дифренциал хэлбэрт**:
 
 \begin{align}
 \text{rot}\,\vec{H} &= \vec{J} + \frac{\partial \vec{D}}{\partial t} \tag{1} \newline
@@ -27,7 +27,7 @@ title: Максвеллын тэгшитгэлүүд
 \end{align}
 
 
-**Максвеллын тэгшитгэл интеграл хэлбэрт**:
+**Максвелын тэгшитгэл интеграл хэлбэрт**:
 
 интеграл хэлбэрт оруулхын тулд [Гаус](http://en.wikipedia.org/wiki/Divergence_theorem) болон [Стокс](http://en.wikipedia.org/wiki/Stokes%27_theorem)ын хуулиудийг ашиглагна. 
 
@@ -40,6 +40,3 @@ title: Максвеллын тэгшитгэлүүд
 \iiint\limits_V^{} \text{div } \vec{D} \mathrm{d}V &= \oint\limits_A^{} \vec{D} \mathrm{d} \vec{A} = \iiint \limits_V^{} \rho_{_V} dV = Q \tag{3.0} \newline
 \iiint \limits_V^{} \text{div } \vec{B} \mathrm{d}V &= \oint\limits_A^{} \vec{B} \mathrm{d}\vec{A} = 0 \tag{4.0}
 \end{align}
-
-
-Максвеллын 4 хууль бол хүн төрөлхтий технологийн **дэвшилд** маш их тус болсон. мартаж болохгүй.
