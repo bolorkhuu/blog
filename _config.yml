@@ -13,6 +13,10 @@ markdown: kramdown
 
 relative_permalinks: false
 
+url: "http://bolorkhuu.de"
 baseurl: ''
-gems:
+
+
+plugins:
+  - jekyll-sitemap
   - jekyll-redirect-from
