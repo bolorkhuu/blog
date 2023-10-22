@@ -60,6 +60,8 @@ The Controller Motherboard **Marboard v0** below is currently being in use on th
 
 The **MarBoard v0** has been further developed and will be replaced soon with **MarBoard v1**.
 
+<img src="{{ site.baseurl }}/images/marbot/project1.png" alt="Drawing" style="width: 580px;"/>
+
 <img src="{{ site.baseurl }}/images/marbot/marboardv1_ov.jpg" alt="Drawing" style="width: 560px;"/>
 <p> <img src="{{ site.url }}{{ site.baseurl }}/images/marbot/marboardv1.gif" style="width:550px;height:360px;border:solid 9px #e3e3e3;" />
 </p>
